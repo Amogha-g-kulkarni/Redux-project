@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import Card from './components/Card.jsx';
+import { useSelector } from 'react-redux';
 
 function App() {
+  const state=useSelector((state)=>state)
+  console.log(state)
   return (
     <div >
-    <Card/>
+  
     </div>
   );
 }
